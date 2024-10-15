@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="camera" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      <img src="assets/img/logo-insta.png" alt="Logo Instagram" class="logo-insta" />
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="videocam-outline" size="large"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="send-outline" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-around">
+      <ion-col size="3" *ngFor="let story of stories">
+        <div class="story-container">
+          <ion-avatar class="story-avatar">
+            <img [src]="story.image" />
+          </ion-avatar>
+          <ion-label class="story-label">{{ story.title }}</ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card class="post-card">
+    <ion-item>
+      <ion-avatar slot="start" class="profile-avatar">
+        <img src="assets/img/profile.jpg" alt="Perfil" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Mauuu_mdl</h2>
+        <p>Córdoba, Ver.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      <img src="assets/img/post1.jpg" alt="Publicación" class="post-image" />
+
+      <div class="icon-container">
+        <ion-icon name="heart-outline" class="icon"></ion-icon>
+        <ion-icon name="chatbubble-outline" class="icon"></ion-icon>
+        <ion-icon name="send-outline" class="icon"></ion-icon>
+        <ion-icon name="bookmark-outline" class="save-icon"></ion-icon>
+      </div>
+
+      <ion-text>
+        <p><strong>A {{ username }}</strong> y a <strong>otras 120 personas</strong> les ha gustado esto</p>
+      </ion-text>
+
+      <ion-text>
+        <p class="comments-link">Ver todos los comentarios</p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button>
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button>
+      <ion-icon name="search-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button>
+      <ion-icon name="add-circle-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button>
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button>
+      <ion-avatar>
+        <img src="assets/img/profile.jpg" alt="Perfil" />
+      </ion-avatar>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

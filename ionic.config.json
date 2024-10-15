@@ -1,0 +1,7 @@
+{
+  "name": "replica de instagram",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

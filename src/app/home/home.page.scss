@@ -1,0 +1,146 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.story-avatar {
+  width: 80px;
+  height: 80px;
+}
+
+.story-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.story-item ion-label {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.story-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.story-avatar {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #f54e42; // Borde estilo Instagram
+  border-radius: 50%; // Avatar circular
+}
+
+.story-label {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.post-card {
+  margin: 10px; // Margen alrededor de la tarjeta
+}
+
+.profile-avatar {
+  width: 40px; // Tamaño del avatar de perfil
+  height: 40px; // Tamaño del avatar de perfil
+  margin-right: 10px; // Espacio entre el avatar y el nombre
+}
+
+.post-image {
+  width: 100%; // Imagen ocupa todo el ancho de la tarjeta
+  border-radius: 5px; // Bordes redondeados
+}
+
+.image-chip {
+  margin: 10px; // Espacio alrededor del chip
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.icon {
+  font-size: 24px; // Tamaño de los íconos
+  margin: 0 5px; // Espacio entre íconos
+}
+
+.save-icon {
+  margin-left: auto; // Para que se mueva a la derecha
+}
+
+.logo-insta {
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  height: 40px; /* Ajusta la altura según sea necesario */
+}
+
+.comments-link {
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.comments-link:hover {
+  text-decoration: underline;
+}
+
+.comments-link {
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.comments-link:hover {
+  text-decoration: underline;
+}
+
+.logo-insta {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+}
+
+
+
+ion-tabs {
+  ion-tab-bar {
+    ion-tab-button {
+      ion-avatar {
+        width: 40px; /* Ajusta este tamaño según sea necesario */
+        height: 40px; /* Asegúrate de que la altura y el ancho sean iguales para mantener la proporción */
+        img {
+          width: 100%; /* Asegúrate de que la imagen se ajuste al contenedor */
+          height: 100%; /* Asegúrate de que la imagen se ajuste al contenedor */
+          border-radius: 50%; /* Mantiene la imagen en forma de círculo */
+        }
+      }
+    }
+  }
+}
